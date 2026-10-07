@@ -336,6 +336,21 @@ button:disabled {
     box-shadow: 0 4px 12px rgba(214, 69, 69, 0.3);
 }
 
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-user {
+    font-weight: 600 !important;
+    opacity: 1 !important;
+    padding: 8px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
 .dashboard-content {
     max-width: 1140px;
     width: 100%;
@@ -667,7 +682,17 @@ button:disabled {
 
     .logout-button {
         align-self: flex-end;
+        width: auto;
+    }
+
+    .header-actions {
         width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .header-user {
+        margin-right: auto;
     }
 
     .menu-grid,
